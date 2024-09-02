@@ -1,0 +1,102 @@
+
+ /* Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+/* // Medium devices (tablets, 768px and up) */
+/* @media (min-width: 768px) { ... } */
+
+/* // Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) { ... } */
+
+/* // X-Large devices (large desktops, 1200px and up) */
+/* @media (min-width: 1200px) { ... } */
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+/* @media (min-width: 1400px) { ... } */
+
+
+/* max-width css */
+
+/* // `xxl` applies to x-large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    .container {
+    width: 1140px;
+    } 
+}
+
+/* // `xl` applies to large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container{
+    width: 960px;
+    }
+    .about .my-img{
+        width: 100%;
+        order: 2;
+        margin-top: 50px;
+     }
+     .about .about-text{
+        width: 100%;
+        order: 1;
+        padding-left: 0;
+        }
+}
+
+/* // `lg` applies to medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container{
+    width: 720px;
+    }
+    header .container nav{
+       display: none;
+    } 
+    .button{
+     margin-left: auto;
+    }
+    .banner .banner-img {
+      display: none;
+    }
+    .banner .banner-text {
+        width: 100%;
+    }
+    .service-content .service-item{
+        width: calc((100% / 2) - 20px);
+    }
+    .portfolio .portfloio-item div{
+        width: calc((100% / 3) - (90px /3));
+    }
+}
+
+/* // `md` applies to small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .container{
+    width: 540px;
+    }
+    .portfolio .portfloio-item div{
+        width: calc((100% / 2) - (90px /2));
+    }
+    .service-content .service-item{
+        width: 100%;
+        max-width: 450px;
+        margin: 30px auto;
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container{
+    width: 100%;
+    }
+    .button{
+       margin-right: 15px;
+    }
+    header img{
+        margin-left: 10px;
+    }
+    .banner .banner-text {
+      margin-left: 20px;
+    }
+   
+ 
+}
+
+
